@@ -1,0 +1,69 @@
+{
+  "ocr_text": "Patient: John Doe  Age: 64\nRx: Warfarin 5mg once daily\n    Aspirin 100mg once daily\n    Omeprazole 20mg once daily\n    Furosemide 40mg twice daily\nSig: Take as directed. Follow up in 4 weeks.",
+  "extracted_drugs": [
+    "Warfarin",
+    "Aspirin",
+    "Omeprazole",
+    "Furosemide"
+  ],
+  "ddi_alerts": [
+    {
+      "pair": [
+        "Warfarin",
+        "Aspirin"
+      ],
+      "severity": "major",
+      "description": "Increased bleeding risk due to combined anticoagulant and antiplatelet effects. Monitor INR closely."
+    }
+  ],
+  "baseline_scores": [
+    {
+      "pair": [
+        "Warfarin",
+        "Aspirin"
+      ],
+      "kg_score": 0.0,
+      "predicted_interaction": false
+    },
+    {
+      "pair": [
+        "Warfarin",
+        "Omeprazole"
+      ],
+      "kg_score": 0.0,
+      "predicted_interaction": false
+    },
+    {
+      "pair": [
+        "Warfarin",
+        "Furosemide"
+      ],
+      "kg_score": 0.0,
+      "predicted_interaction": false
+    },
+    {
+      "pair": [
+        "Aspirin",
+        "Omeprazole"
+      ],
+      "kg_score": 0.125,
+      "predicted_interaction": true
+    },
+    {
+      "pair": [
+        "Aspirin",
+        "Furosemide"
+      ],
+      "kg_score": 0.0,
+      "predicted_interaction": false
+    },
+    {
+      "pair": [
+        "Omeprazole",
+        "Furosemide"
+      ],
+      "kg_score": 0.0,
+      "predicted_interaction": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+networkx
+matplotlib
+pandas
+requests
+tqdm
+transformers==4.35.0
+torch
+torchvision
+Pillow
+sentencepiece
+datasets
+seqeval
